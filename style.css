@@ -1,0 +1,172 @@
+:root {
+  --avatar--font--size: 24px;
+  --header--height: 40px;
+  --avatar--height: 30px;
+  --box--chat--color: #fe5da3;
+  --message--margin: 42px;
+}
+.box-chat {
+  width: 300px;
+}
+
+.box-chat > div {
+  border: #ccc 1px solid;
+}
+
+.header {
+  height: 40px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.header > div {
+  display: inline-block;
+}
+
+.header .avatar {
+  /* height: 24px; */
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  justify-self: center;
+  line-height: var(--avatar--height);
+  margin: calc((var(--header--height) - var(--avatar--height)) / 2);
+
+  border-radius: 50%;
+  background-color: var(--box--chat--color);
+
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.header .name {
+  font-weight: 600;
+}
+
+.message {
+  margin: 12px 8px;
+  border-radius: 12px;
+  padding: 4px 8px;
+  padding-right: 24px;
+}
+
+.message.left {
+  margin-right: var(--message--margin);
+}
+
+.message.right {
+  margin-left: var(--message--margin);
+  background-color: var(--box--chat--color);
+  color: white;
+}
+
+.message-input {
+  padding: 10px;
+  /* display: inline-block; */
+  line-height: 20px;
+}
+
+.message-input > form {
+  width: 75%;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  /* line-height: 24px; */
+  border-radius: 12px;
+  border: #ccc 1px solid;
+  padding: 4px;
+}
+
+.icon-container {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 12px;
+  background-color: var(--box--chat--color);
+  border-radius: 14px;
+}
+
+.icon-container > i {
+  color: white;
+  font-size: 14px;
+}
+
+.message-input {
+  border-radius: 0 0 8px 8px;
+}
+
+.item {
+  border-radius: 8px;
+  border: #ccc 1px solid;
+  width: 221px;
+  height: 140px;
+  align-self: center;
+
+  padding-top: 8px;
+  margin: 8px;
+  display: inline-block;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.item > div {
+  text-align: center;
+  margin: auto;
+}
+
+/* Task 03 */
+.item-container {
+  width: 262px;
+  display: inline-block;
+  /* display: block; */
+  border: #ccc 1px solid;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 6px 8px 6px 4px;
+  /* padding: 5px; */
+}
+
+.item-container img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 5px;
+
+  object-fit: cover;
+}
+
+.item-container div {
+  padding: 4px;
+}
+
+.item-container .name {
+  padding-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-container .new_price {
+  font-weight: bold;
+  color: green;
+}
+
+.item-container .old_price {
+  color: red;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.item-container .discount {
+  color: #800080;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
